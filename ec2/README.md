@@ -1,7 +1,13 @@
 Austin Privett
 8/16/2018
 
-# Short Version
+# EC2 Instances
+
+This folder contains code used on EC2 instances (e.g. python, Jupyter, sklearn).
+
+## EC2 Usage Instructions
+
+### Short Version
 
 1. Get new packages `pip install boto3 doctopt`
 2. Run `bash create_user_keypair.sh`
@@ -11,6 +17,6 @@ Austin Privett
  * Output format: text/json/table
 4. Trouble from end-of-line? dos2unix
 
-# More Information
+### More Information
 
 Read `AWS_EC2_Walkthrough.docx`.
