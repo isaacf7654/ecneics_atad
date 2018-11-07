@@ -34,3 +34,8 @@ notebook to GitHub `notebooks` repo (NO HEALTHCARE DATA, ONLY RESULTS!),
 4. Make the push close an appropriately-raised issue that also refers to the
 notebook for records.
 5. Rinse and repeat.
+
+## Engineered Features
+
+See [this spreadsheet](https://launchpointcorporation-my.sharepoint.com/:x:/g/personal/aprivett_discoveryhealthpartners_com/EaaAFunfBMZNh6Wyx5AI6PcB5_wDyeEuFUX5QQevik3nCA?e=poLise) 
+for a list of useful engineered features.
