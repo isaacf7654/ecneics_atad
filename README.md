@@ -7,7 +7,8 @@ repository.
 
 ## Using GitHub
 
-For the unfamiliar, we can use GitHub's helpful **Issues** feature to track
+For the unfamiliar, we can use GitHub's helpful [**Issues**](https://guides.github.com/features/issues/)
+feature to track
 our work and help our future selves and those selves that come after understand
 our thought processes (this can greatly increase efficiency).
 
