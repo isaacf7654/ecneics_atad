@@ -7,11 +7,12 @@ repository.
 
 ## Using GitHub
 
-For the unfamiliar, we can use GitHub's helpful **Issues** feature to track
+For the unfamiliar, we can use GitHub's helpful [**Issues**](https://guides.github.com/features/issues/)
+feature to track
 our work and help our future selves and those selves that come after understand
 our thought processes (this can greatly increase efficiency).
 
-Austin suggests we simply ask questions **HERE** rather than through other
+Austin suggests we simply ask questions **HERE** (with Issues) rather than through other
 channels if there is any chance others will have the same question (very
 common) by raising an Issue. In addition, Austin suggests we track  development
 by raising and responding to issues. This provides a natural way to look back
