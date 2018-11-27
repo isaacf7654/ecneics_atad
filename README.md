@@ -22,6 +22,8 @@ explaining to somebody something they could be reading.
 
 ## Data Science Workflow using AWS
 
+See AWS EC2 Walkthrough Word document [here](https://launchpointcorporation-my.sharepoint.com/:w:/g/personal/aprivett_discoveryhealthpartners_com/EX0oajtn7hlGr1dBPc25V-QB3zYM6DeV2hQXwdgj2XdRxQ?e=TnLsiU).
+
 **Proper organization makes hard things easier.**
 
 1. Construct AMI that has all necessary libraries to do Data Science on EC2
