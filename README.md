@@ -43,3 +43,12 @@ for a list of useful engineered features.
 ## Wiki
 
 The [wiki](https://github.com/dhplabs/data-science/wiki/Installing-new-software-on-Public-Access-Image) has some helpful information.
+
+## Installing new packages on an EC2 instance (pip and conda)
+
+1. Ask Bhanu to open the Public Access.
+1. Use https://github.com/dhplabs/data-science/blob/master/ec2/launch_and_terminate_instance_publicAccess.py and follow the create instance instructions.
+2. Then, install everything you need using pip, etc.
+3. Ask Bhanu for the next step. Tell him you're done and the public access can be closed.
+
+(In the future, we'll have a firewall and won't have to manually open/close the channel.)
