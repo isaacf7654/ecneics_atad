@@ -39,3 +39,7 @@ notebook for records.
 
 See [this spreadsheet](https://launchpointcorporation-my.sharepoint.com/:x:/g/personal/aprivett_discoveryhealthpartners_com/EaaAFunfBMZNh6Wyx5AI6PcB5_wDyeEuFUX5QQevik3nCA?e=poLise) 
 for a list of useful engineered features.
+
+## Wiki
+
+The [wiki](https://github.com/dhplabs/data-science/wiki/Installing-new-software-on-Public-Access-Image) has some helpful information.
