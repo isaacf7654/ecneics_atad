@@ -28,7 +28,9 @@ See AWS EC2 Walkthrough Word document [here](https://launchpointcorporation-my.s
 
 1. Construct AMI that has all necessary libraries to do Data Science on EC2
 instance. This AMI must have internet access. Use this to spin up EC2
-instances for working with medical data (no internet access).
+instances for working with medical data (no internet access). Any changes you
+want to save after that point must go over SSH (either use SCP or copy/paste
+across editor).
 2. Develop and experiment on EC2 instance with big data on a Jupyter notebook.
 3. If written code is not a one-off, show proof of effectiveness by saving
 notebook to GitHub `notebooks` repo (NO HEALTHCARE DATA, ONLY RESULTS!),
