@@ -56,6 +56,7 @@ for a list of useful engineered features.
 ## Supported EC2 instance types
 
 - [x] t2
+- [ ] t3
 
 # EC2 Instance Rules
 
