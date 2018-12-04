@@ -52,3 +52,7 @@ for a list of useful engineered features.
 3. Ask Bhanu for the next step. Tell him you're done and the public access can be closed.
 
 (In the future, we'll have a firewall and won't have to manually open/close the channel.)
+
+## Supported EC2 instance types
+
+- [x] t2
