@@ -38,7 +38,7 @@ BeakerX and JupyterLab (and BeakerX is pretty heavy).
 conda create -y -n labx 'python>=3' nodejs pandas 'openjdk=8.0.121' maven py4j requests sqlalchemy
 source activate labx
 conda config --env --add pinned_packages 'openjdk=8.0.121'
-conda install -y -c conda-forge jupyterlab beakerx nodejs
+conda install -y -c conda-forge jupyterlab beakerx nodejs sqlalchemy-redshift
 beakerx install
 jupyter labextension install @jupyter-widgets/jupyterlab-manager beakerx-jupyterlab
 
@@ -46,7 +46,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager beakerx-jupyter
 conda create -y -n beakerx 'python>=3' nodejs pandas 'openjdk=8.0.121' maven py4j requests sqlalchemy
 source activate beakerx
 conda config --env --add pinned_packages 'openjdk=8.0.121'
-conda install -y -c conda-forge ipywidgets beakerx
+conda install -y -c conda-forge ipywidgets beakerx sqlalchemy-redshift
 beakerx install
 ```
 
@@ -60,13 +60,12 @@ about supporting it yet.
 ```bash
 conda create -y -n pyvizlab 'python>=3'
 source activate pyvizlab
-conda install -y -c conda-forge jupyterlab category_encoders scikit-learn pandas numba sqlalchemy
+conda install -y -c conda-forge jupyterlab category_encoders scikit-learn pandas numba sqlalchemy sqlalchemy-redshift umap-learn
 conda install -y -c pyviz/label/dev pyviz
 # conda install -c plotly plotly # skipping this for now
 
 # my version of umap is different, but I want all the dependencies
 # maybe try to get this going without conda
-conda install -y -c conda-forge umap-learn
 
 # some neat extensions (batteries included)
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
@@ -82,7 +81,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager @pyviz/jupyterl
 # and the vanillya jupyter version
 conda create -y -n pyviz 'python>=3'
 source activate pyviz
-conda install -y -c conda-forge jupyter ipywidgets category_encoders scikit-learn pandas numba sqlalchemy
+conda install -y -c conda-forge jupyter ipywidgets category_encoders scikit-learn pandas numba sqlalchemy sqlalchemy-redshift
 conda install -y -c pyviz/label/dev pyviz
 ```
 
