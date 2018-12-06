@@ -64,13 +64,11 @@ for a list of useful engineered features.
 | `/`       | 10GB          | home directory, Installation      | sysadmin       |
 | `/vol`    | user-selected | data science software, python env | data wranglers |
 
-## [EC2 Instance Choices](https://www.ec2instances.info/)
-
-As of now, t3 is the only choice you should NOT use.
-
 ## Rotating Access Keys
-
 1. Generate new keys as shown [here](https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/).
 2. Run `aws configure` CLI to update keys on the local machine.
+
+## [EC2 Instance Choices](https://www.ec2instances.info/)
+As of now, t3 is the only choice you should NOT use.
 
 ## [Setting up connection between EC2 instance and Redshift](https://github.com/dhplabs/data-science/issues/10#issuecomment-444999492)
