@@ -53,11 +53,6 @@ for a list of useful engineered features.
 
 (In the future, we'll have a firewall and won't have to manually open/close the channel.)
 
-## Supported EC2 instance types
-
-- [x] t2
-- [ ] t3
-
 # EC2 Instance Rules
 
 1. Home directory size is limited to 10GB.
@@ -68,6 +63,10 @@ for a list of useful engineered features.
 | --------- | ------------- | --------------------------------- | -------------- |
 | `/`       | 10GB          | home directory, Installation      | sysadmin       |
 | `/vol`    | user-selected | data science software, python env | data wranglers |
+
+# [EC2 Instance Choices](https://www.ec2instances.info/)
+
+As of now, t3 is the only choice you should NOT use.
 
 ## Rotating Access Keys
 
