@@ -53,7 +53,7 @@ for a list of useful engineered features.
 
 (In the future, we'll have a firewall and won't have to manually open/close the channel.)
 
-# EC2 Instance Rules
+## EC2 Instance Rules
 
 1. Home directory size is limited to 10GB.
 2. DHP Software located at: `/vol/dhplab`. Permissions are rwx. For software updates, open this with a public access-enabled instance.
@@ -64,7 +64,7 @@ for a list of useful engineered features.
 | `/`       | 10GB          | home directory, Installation      | sysadmin       |
 | `/vol`    | user-selected | data science software, python env | data wranglers |
 
-# [EC2 Instance Choices](https://www.ec2instances.info/)
+## [EC2 Instance Choices](https://www.ec2instances.info/)
 
 As of now, t3 is the only choice you should NOT use.
 
