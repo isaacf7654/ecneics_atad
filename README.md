@@ -74,4 +74,4 @@ for a list of useful engineered features.
 1. Generate new keys as shown [here](https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/).
 2. Run `aws configure` CLI to update keys on the local machine.
 
-## [Setting up connection between EC2 instance and Redshift](https://github.com/dhplabs/data-science/issues/10#issuecomment-444996828)
+## [Setting up connection between EC2 instance and Redshift](https://github.com/dhplabs/data-science/issues/10#issuecomment-444999492)
