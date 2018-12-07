@@ -72,3 +72,5 @@ for a list of useful engineered features.
 As of now, t3 is the only choice you should NOT use.
 
 ## [Setting up connection between EC2 instance and Redshift](https://github.com/dhplabs/data-science/issues/10#issuecomment-444999492)
+
+## Updating EC2 instance (TODO)
