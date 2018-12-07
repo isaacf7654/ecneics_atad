@@ -23,6 +23,8 @@ exit # to get new nev
 # log back in via ssh
 ssh -i <publickey> <name>@<server>
 conda update conda
+# jupyter extnesions use npm and yarn
+npm install -g npm yarn
 ```
 
 ## 2. Get JupyterLab + BeakerX via conda.
@@ -41,6 +43,7 @@ conda config --env --add pinned_packages 'openjdk=8.0.121'
 conda install -y -c conda-forge jupyterlab beakerx nodejs sqlalchemy-redshift
 beakerx install
 jupyter labextension install @jupyter-widgets/jupyterlab-manager beakerx-jupyterlab
+# jupyter labextension install .
 
 # Set up Jupyter (old notebook)
 conda create -y -n beakerx 'python>=3' nodejs pandas 'openjdk=8.0.121' maven py4j requests sqlalchemy
@@ -48,6 +51,7 @@ source activate beakerx
 conda config --env --add pinned_packages 'openjdk=8.0.121'
 conda install -y -c conda-forge ipywidgets beakerx sqlalchemy-redshift
 beakerx install
+# beakerx_databrowser install
 ```
 
 ## 3. Plotting packages
@@ -60,8 +64,8 @@ about supporting it yet.
 ```bash
 conda create -y -n pyvizlab 'python>=3'
 source activate pyvizlab
-conda install -y -c conda-forge jupyterlab category_encoders scikit-learn pandas numba sqlalchemy sqlalchemy-redshift umap-learn
 conda install -y -c pyviz/label/dev pyviz
+conda install -y -c conda-forge jupyterlab category_encoders scikit-learn pandas numba sqlalchemy sqlalchemy-redshift umap-learn
 # conda install -c plotly plotly # skipping this for now
 
 # my version of umap is different, but I want all the dependencies
@@ -81,13 +85,22 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager @pyviz/jupyterl
 # and the vanillya jupyter version
 conda create -y -n pyviz 'python>=3'
 source activate pyviz
-conda install -y -c conda-forge jupyter ipywidgets category_encoders scikit-learn pandas numba sqlalchemy sqlalchemy-redshift
 conda install -y -c pyviz/label/dev pyviz
+conda install -y -c conda-forge jupyter ipywidgets category_encoders scikit-learn pandas numba sqlalchemy sqlalchemy-redshift
+conda install -y -c conda-forge jupyter_nbextensions_configurator
 ```
 
 ## 3. Get ML Packages via conda.
+- [x] ~~UMAP~~
+- [x] sklearn
+- [x] pandas
+- [x] numba
+- [x] sqlredshift
+- [x] category_encoders
 
 ## 4. Get DHP Packages via git or scp.
+- [ ] discover
+- [ ] UMAP + edits
 
 ## 5. See available environments:
 
@@ -104,3 +117,14 @@ pyvizlab                 /vol/labenv/miniconda3/envs/pyvizlab
 
 After this point, know that you have space in your home directory `~` and
 the python software is loaded to `/vol/dhplabs`
+
+## TO Install in Public Instance
+
+- [x] Tiny Vi => Vi (setup w/ syntax highlighting, remember last location)
+   - [ ] edit `.vimrc` using https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim
+- [x] htop for CPU and memory monitoring (others out there require nodejs)
+- [x] nbextensions configurator (https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator)
+   - [ ] initialization cells
+   - [ ] TOC
+   - [ ] outline section folding
+- [ ] JupyterLab extensions
