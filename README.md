@@ -53,12 +53,7 @@ for a list of useful engineered features.
 
 (In the future, we'll have a firewall and won't have to manually open/close the channel.)
 
-## Supported EC2 instance types
-
-- [x] t2
-- [ ] t3
-
-# EC2 Instance Rules
+## EC2 Instance Rules
 
 1. Home directory size is limited to 10GB.
 2. DHP Software located at: `/vol/dhplab`. Permissions are rwx. For software updates, open this with a public access-enabled instance.
@@ -68,3 +63,12 @@ for a list of useful engineered features.
 | --------- | ------------- | --------------------------------- | -------------- |
 | `/`       | 10GB          | home directory, Installation      | sysadmin       |
 | `/vol`    | user-selected | data science software, python env | data wranglers |
+
+## Rotating Access Keys
+1. Generate new keys as shown [here](https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/).
+2. Run `aws configure` CLI to update keys on the local machine.
+
+## [EC2 Instance Choices](https://www.ec2instances.info/)
+As of now, t3 is the only choice you should NOT use.
+
+## [Setting up connection between EC2 instance and Redshift](https://github.com/dhplabs/data-science/issues/10#issuecomment-444999492)
