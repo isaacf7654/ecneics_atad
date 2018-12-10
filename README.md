@@ -41,7 +41,7 @@ notebook for records.
 
 ## Engineered Features
 
-See [this spreadsheet](https://launchpointcorporation-my.sharepoint.com/:x:/g/personal/aprivett_discoveryhealthpartners_com/EaaAFunfBMZNh6Wyx5AI6PcB5_wDyeEuFUX5QQevik3nCA?e=poLise) 
+See [this spreadsheet](https://launchpointcorporation-my.sharepoint.com/:x:/g/personal/aprivett_discoveryhealthpartners_com/EaaAFunfBMZNh6Wyx5AI6PcB5_wDyeEuFUX5QQevik3nCA?e=poLise)
 for a list of useful engineered features.
 
 ## Installing new packages on an EC2 instance (pip and conda)
@@ -55,14 +55,18 @@ for a list of useful engineered features.
 
 ## EC2 Instance Rules
 
-1. Home directory size is limited to 10GB.
-2. DHP Software located at: `/vol/dhplab`. Permissions are rwx. For software updates, open this with a public access-enabled instance.
-3. Save big data (e.g., pulled data from SQL database) to `/vol/bigdata`.
+1. `~`: Home directory should not contain
+2. DHP Software located at: `/DHP-setup/`.
+  - For software updates, open this with a public access-enabled instance.
+  - Permissions are rwx.
+  - Why is software not in home directory? To reinforce the notion that this should likely not change much
+3. Save big data (e.g., pulled data from SQL database containing PHI) to `/vol/sensitive`.
 
-| Directory | Size          | Example Contents                  | Maintained by  |
-| --------- | ------------- | --------------------------------- | -------------- |
-| `/`       | 10GB          | home directory, Installation      | sysadmin       |
-| `/vol`    | user-selected | data science software, python env | data wranglers |
+| Directory        | Size          | Example Contents       |
+| ---------------- | ------------- | ---------------------- |
+| `/DHP-setup/`    | 50GB          | DHP Software           |
+| `/vol/sensitive` | user-selected | sensitive data         |
+| `~`              |               | not too much, probably |
 
 ## Rotating Access Keys
 1. Generate new keys as shown [here](https://aws.amazon.com/blogs/security/how-to-rotate-access-keys-for-iam-users/).

@@ -86,7 +86,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager @pyviz/jupyterl
 conda create -y -n pyviz 'python>=3'
 source activate pyviz
 conda install -y -c pyviz/label/dev pyviz
-conda install -y -c conda-forge jupyter ipywidgets category_encoders scikit-learn pandas numba sqlalchemy sqlalchemy-redshift
+conda install -y -c conda-forge jupyter ipywidgets category_encoders scikit-learn pandas numba umap-learn sqlalchemy sqlalchemy-redshift
 conda install -y -c conda-forge jupyter_nbextensions_configurator
 ```
 
@@ -99,8 +99,8 @@ conda install -y -c conda-forge jupyter_nbextensions_configurator
 - [x] category_encoders
 
 ## 4. Get DHP Packages via git or scp.
-- [ ] discover
-- [ ] UMAP + edits
+- [x] discover
+- [ ] UMAP + edits (is this still needed?)
 
 ## 5. See available environments:
 
@@ -128,3 +128,17 @@ the python software is loaded to `/vol/dhplabs`
    - [ ] TOC
    - [ ] outline section folding
 - [ ] JupyterLab extensions
+   - [x] `conda install -c conda-forge nodejs`
+   - [x] `jupyter lab build`
+   - [x] jupyterlab-manager
+   - [x] jupyterlab-pyviz
+   - [x] toc
+   - [ ] test
+   - [ ] jupyterlab_voyager
+- [ ] Jupyter (non-lab)
+   - [ ] https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html
+   - [ ] test
+
+# 6 Git Sync any edits while on public instance.
+
+Files located at `/DHP-setup/`.
