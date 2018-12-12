@@ -73,7 +73,10 @@ for a list of useful engineered features.
 2. Run `aws configure` CLI to update keys on the local machine.
 
 ## [EC2 Instance Choices](https://www.ec2instances.info/)
-As of now, t3 is the only choice you should NOT use.
+As of now, t3 is the only choice you should NOT use.  Update: apparently, some filesystems are different, and we don't yet
+know where to find this information out other than after starting the system. So, here's a list of supported instance types:
+- t2.large
+- 
 
 ## [Setting up connection between EC2 instance and Redshift](https://github.com/dhplabs/data-science/issues/10#issuecomment-444999492)
 
